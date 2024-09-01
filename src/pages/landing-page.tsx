@@ -54,7 +54,7 @@ export function LandingPage() {
               <img
                 src={path}
                 alt={name}
-                className="h-9 sm:h-14 object-contain"
+                className="h-8 sm:h-13 object-contain"
               />
             </CarouselItem>
           ))}
