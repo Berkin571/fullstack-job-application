@@ -12,8 +12,16 @@ import {
   CarouselContent,
   CarouselItem,
 } from "../components/ui/carousel";
-import companies from "../data/companies.json";
 import Autoplay from "embla-carousel-autoplay";
+
+import companies from "../data/companies.json";
+import faq from "../data/faq.json";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
 
 export function LandingPage() {
   return (
@@ -89,6 +97,17 @@ export function LandingPage() {
           </CardContent>
         </Card>
       </section>
+
+      <Accordion type="multiple" className="w-full">
+        {faq.map((faq, index) => (
+          <AccordionItem key={index} value={`item-${index + 1}`}>
+            <AccordionTrigger>{faq.question}</AccordionTrigger>
+            <AccordionContent className="text-white">
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </main>
   );
 }

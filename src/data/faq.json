@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Was ist die HustleCulture?",
+    "answer": "Die HustleCulture ist eine Jobportal-Anwendung, die es Unternehmen ermöglicht, Stellenanzeigen zu veröffentlichen und Nutzern ermöglicht, nach Jobs zu suchen und sich darauf zu bewerben. Sie bietet Funktionen sowohl für Arbeitssuchende als auch für Arbeitgeber, mit benutzerfreundlichen Oberflächen und sicherer Authentifizierung."
+  },
+  {
+    "question": "Wie poste ich eine Stelle?",
+    "answer": "Als Arbeitgeber können Sie eine Stelle posten, indem Sie nach dem Einloggen zum Bereich 'Stelle posten' navigieren. Füllen Sie die Jobdetails aus und senden Sie das Formular ab, um eine neue Stellenanzeige zu erstellen."
+  },
+  {
+    "question": "Wie kann ich nach Jobs suchen?",
+    "answer": "Arbeitssuchende können Jobs nach Schlüsselwörtern, Standort, Kategorie und anderen Filtern über die Suchleiste auf der Startseite oder der speziellen Job-Suchseite suchen."
+  },
+  {
+    "question": "Wie bewerbe ich mich auf eine Stelle?",
+    "answer": "Um sich auf eine Stelle zu bewerben, klicken Sie auf die Stellenanzeige und folgen den angegebenen Bewerbungsanweisungen. Möglicherweise müssen Sie Ihren Lebenslauf hochladen und zusätzliche Informationen bereitstellen."
+  },
+  {
+    "question": "Kann ich Jobs speichern, um mich später zu bewerben?",
+    "answer": "Ja, Sie können Stellenanzeigen speichern, indem Sie auf den Button 'Job speichern' in der Stellenanzeige klicken. Gespeicherte Jobs können in Ihrem Profil unter dem Abschnitt 'Gespeicherte Jobs' aufgerufen werden."
+  },
+  {
+    "question": "Wie verfolge ich meine Bewerbungen?",
+    "answer": "Arbeitssuchende können den Status ihrer Bewerbungen im Abschnitt 'Bewerbungen' in ihrem Profil verfolgen. Dieser Abschnitt bietet Updates zum Fortschritt jeder Bewerbung."
+  }
+]
