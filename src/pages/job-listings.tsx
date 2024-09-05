@@ -106,7 +106,7 @@ export function JobListings() {
       {/* Search Form */}
       <form
         onSubmit={handleSearch}
-        className="h-14 flex w-full gap-2 items-center mb-3"
+        className="h-10 flex w-full gap-2 items-center mb-3"
       >
         <Input
           type="text"
