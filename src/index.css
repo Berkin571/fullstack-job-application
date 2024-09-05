@@ -68,3 +68,7 @@
     @apply gradient text-transparent bg-clip-text;
   }
 }
+
+.no-focus-outline:focus {
+  outline: none;
+}

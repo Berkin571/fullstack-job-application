@@ -35,7 +35,9 @@ export const JobCard = ({
     fn: fnSavedJob,
     data: savedJob,
     loading: loadingSavedJob,
-  } = useFetch<Job[]>(saveJob as any);
+  } = useFetch<Job[]>(saveJob as any, {
+    alreadySaved: saved,
+  });
 
   useEffect(() => {
     if (savedJob !== undefined && savedJob !== null)
@@ -43,11 +45,17 @@ export const JobCard = ({
   }, [savedJob]);
 
   const handleSaveJob = async () => {
-    await fnSavedJob({
-      user_id: user?.id,
-      job_id: job.id,
-    });
-    onJobSaved();
+    try {
+      await fnSavedJob({
+        user_id: user?.id,
+        job_id: job.id,
+      });
+
+      onJobSaved();
+      setSaved(!saved);
+    } catch (error) {
+      console.error("Error saving job:", error);
+    }
   };
 
   return (
