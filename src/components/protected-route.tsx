@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 import { useUser } from "@clerk/clerk-react";
 
@@ -8,11 +8,19 @@ type Props = {
 };
 
 const ProtectedRoute = ({ children }: Props) => {
-  const { isSignedIn, isLoaded } = useUser();
-  // const { pathname } = useLocation();
+  const { user, isSignedIn, isLoaded } = useUser();
+  const { pathname } = useLocation();
 
   if (isLoaded && !isSignedIn && isSignedIn !== undefined) {
     return <Navigate to={"/?sign-in=true"} />;
+  }
+
+  if (
+    user !== undefined &&
+    !user?.unsafeMetadata?.role &&
+    pathname !== "onboarding"
+  ) {
+    return <Navigate to={"/onboarding"} />;
   }
 
   return <>{children}</>;
